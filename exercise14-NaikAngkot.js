@@ -9,7 +9,7 @@ function naikAngkot(arrPenumpang) {
           if (arrPenumpang[i][1] === rute[k]) {
            var start = k;
           }
-          if (arrPenumpang[i][2] == rute[k]) {
+          if (arrPenumpang[i][2] === rute[k]) {
             var end = k;
           }
         }
@@ -17,7 +17,7 @@ function naikAngkot(arrPenumpang) {
         data.penumpang = arrPenumpang[i][0];
         data.naikDari = arrPenumpang[i][1];
         data.tujuan = arrPenumpang[i][2];
-        data.bayar = Math.abs(start - end) * 200;
+        data.bayar = Math.abs(start - end) * 2000;
       }
       result.push(data);
     }
