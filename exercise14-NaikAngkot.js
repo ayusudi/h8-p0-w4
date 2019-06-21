@@ -1,17 +1,16 @@
 function naikAngkot(arrPenumpang) {
   rute = ["A", "B", "C", "D", "E", "F"];
   var result = [];
-  var start = 0;
-  var end = 0;
+
   if (arrPenumpang.length > 0) {
     for (let i = 0; i < arrPenumpang.length; i++) {
       for (let j = 0; j < arrPenumpang[i].length; j++) {
         for (let k = 0; k < rute.length; k++) {
           if (arrPenumpang[i][1] === rute[k]) {
-            start = k;
+           var start = k;
           }
           if (arrPenumpang[i][2] == rute[k]) {
-            end = k;
+            var end = k;
           }
         }
         var data = {};
